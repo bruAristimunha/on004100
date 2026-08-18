@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "HUP iEEG Epilepsy Dataset",
-  "description": "This dataset comprises intracranial EEG (iEEG) recordings from 58 patients with drug-resistant epilepsy who underwent surgical evaluation at the Hospital of the University of Pennsylvania. Recordings include both ECoG (subdural grid/strip/depth electrodes) and SEEG (stereotactic depth electrodes) data spanning interictal and ictal periods, along with electrode localizations in ICBM152 MNI space. The dataset also provides clinically annotated seizure onset channels and channels overlapping with resection/ablation zones, supporting research on surgical outcome prediction and epileptogenic tissue mapping in focal epilepsy.",
-  "methods_description": "Intracranial EEG data were collected via subdural grid, strip, and depth electrodes (ECoG) or stereotactically-placed depth electrodes (SEEG) during clinical evaluation for epilepsy surgery. Electrode locations were co-registered to ICBM152 MNI space, and resection/ablation zones were determined by segmenting the resection cavity. The dataset was converted into BIDS format using MNE-BIDS.",
+  "description": "This dataset contains de-identified intracranial EEG (iEEG) recordings from 58 patients with drug-resistant epilepsy who underwent surgical evaluation at the Hospital of the University of Pennsylvania. Recordings include both ECoG (subdural grid/strip and depth electrodes) and SEEG (stereotactic depth electrodes) during interictal and ictal periods, along with electrode localizations in ICBM152 MNI space. The dataset also provides clinically-determined seizure onset zone channels and channels overlapping with the resection or ablation zone, supporting research on epileptogenic tissue mapping and surgical outcome prediction.",
+  "methods_description": "Intracranial EEG data (ECoG and SEEG) were collected from patients undergoing surgical treatment for drug-resistant epilepsy. Electrode localizations were computed in ICBM152 MNI space, and resection/ablation zones were determined by segmenting the resection cavity. The dataset was converted into BIDS format using MNE-BIDS.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -39,10 +39,16 @@
       "term": "SEEG"
     },
     {
+      "term": "seizure onset zone"
+    },
+    {
       "term": "epilepsy surgery"
     },
     {
-      "term": "seizure onset zone"
+      "term": "resection zone"
+    },
+    {
+      "term": "laser ablation"
     }
   ],
   "related_identifiers": [
@@ -69,16 +75,6 @@
     {
       "identifier": "https://nemar.org/dataset/on004100",
       "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1093/brain/awz125",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1093/brain/awac360",
-      "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
     }
   ],
