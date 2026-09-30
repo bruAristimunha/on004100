@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "HUP iEEG Epilepsy Dataset",
-  "description": "This dataset contains de-identified intracranial EEG (iEEG) recordings from 58 patients with drug-resistant epilepsy who underwent surgical evaluation at the Hospital of the University of Pennsylvania. Recordings include both ECoG (subdural grid/strip and depth electrodes) and SEEG (stereotactic depth electrodes) during interictal and ictal periods, along with electrode localizations in ICBM152 MNI space. The dataset also provides clinically-determined seizure onset zone channels and channels overlapping with the resection or ablation zone, supporting research on epileptogenic tissue mapping and surgical outcome prediction.",
-  "methods_description": "Intracranial EEG data (ECoG and SEEG) were collected from patients undergoing surgical treatment for drug-resistant epilepsy. Electrode localizations were computed in ICBM152 MNI space, and resection/ablation zones were determined by segmenting the resection cavity. The dataset was converted into BIDS format using MNE-BIDS.",
+  "description": "De-identified intracranial EEG recordings from 58 patients undergoing surgical evaluation for drug-resistant epilepsy at the Hospital of the University of Pennsylvania. Recordings used subdural grid, strip, and depth electrodes (ECoG) or stereotactically placed depth electrodes (SEEG), and include interictal and ictal periods. The dataset provides electrode localizations in ICBM152 MNI space, clinically determined seizure onset channels, and channels overlapping the resection or ablation zone segmented from the resection cavity.",
+  "methods_description": "Patients underwent intracranial EEG with ECoG or SEEG electrodes and subsequently received surgical resection or laser ablation. Electrodes were localized in ICBM152 MNI space, and resection zones were determined by segmenting the resection cavity. The data were converted to BIDS format using MNE-BIDS.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,35 +20,25 @@
   },
   "keywords": [
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
-    },
-    {
       "term": "intracranial EEG"
     },
     {
-      "term": "ECoG"
+      "term": "iEEG"
     },
     {
-      "term": "SEEG"
+      "term": "electrocorticography"
+    },
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "drug resistant epilepsy"
     },
     {
       "term": "seizure onset zone"
     },
     {
       "term": "epilepsy surgery"
-    },
-    {
-      "term": "resection zone"
-    },
-    {
-      "term": "laser ablation"
     }
   ],
   "related_identifiers": [
@@ -84,7 +74,7 @@
     "ieeg"
   ],
   "sizes": [
-    "14.2 GB (320 files)"
+    "13.22 GB (320 files)"
   ],
   "formats": [
     ".edf",
