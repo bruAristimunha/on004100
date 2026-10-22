@@ -1,4 +1,4 @@
-Unreleased 2026-10-19
+1.1.4 2026-10-22
   - 2026-10-19 electrode locations (A4, Lane G round 4): coordsystem.json units m -> mm in 57 files (57 files). README: section 'Electrode locations (19 Oct 2026)'.
 
 1.1.3 2023-03-22
